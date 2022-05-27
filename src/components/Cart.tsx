@@ -2,8 +2,6 @@ import { useSelector } from "react-redux"
 import { IState } from "../store"
 import { ICartItem } from "../store/modules/cart/types"
 
-
-
 export function Cart() {
   const cart = useSelector<IState, ICartItem[]>(state => state.cart.items)
 
